@@ -1,0 +1,415 @@
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: rgb(46, 44, 44);
+        color: whitesmoke;
+        min-height: 100vh;
+    }
+
+    /* This is header */
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: rgb(30, 30, 30);
+        position: relative;
+        height: 10vh;
+    }
+
+    /* General links */
+    header nav .highlight {
+        color: orange;
+        font-weight: bold;
+    }
+
+    header nav .right {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    header nav .right a {
+        margin: 0 15px;
+        color: whitesmoke;
+        text-decoration: none;
+        position: relative;
+    }
+
+    header nav .right a:hover {
+        color: orange;
+    }
+
+    header nav .dropdown {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        flex-direction: column;
+        background-color: rgb(30, 30, 30);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        z-index: 1000;
+        padding: 10px;
+    }
+
+    /* Dropdown links */
+    header nav .dropdown a {
+        padding: 8px 20px;
+        color: whitesmoke;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    header nav .dropdown a:hover {
+        color: orange;
+        background-color: rgb(22, 20, 20);
+    }
+
+    /* Handle hover for desktop */
+    header nav .dropdown-trigger:hover+.dropdown,
+    header nav .dropdown:hover {
+        display: flex;
+    }
+
+    /* Mobile Menu Toggle */
+    header nav .menu-toggle {
+        display: none;
+        /* Hidden by default */
+        cursor: pointer;
+        font-size: 1.8rem;
+        color: whitesmoke;
+    }
+
+
+
+    /* This is main */
+
+    main {
+        height: 100vh;
+        width: 100%;
+    }
+
+    #home .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #home .container .right img {
+        height: 60%;
+        width: 100%;
+        border-radius: 10%;
+        box-shadow: 0px 0px 30px orange;
+    }
+
+    #home .container .right {
+        height: 100%;
+        width: 50%;
+    }
+
+    #home .container .left {
+        height: 100%;
+        width: 50%;
+    }
+
+    #projects h2 {
+        margin-bottom: 3%;
+    }
+
+    #projects a {
+        text-decoration: none;
+        background-color: orange;
+        border-radius: 10px;
+        padding: 1%;
+    }
+
+    #projects button {
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+
+    #projects {
+        background-color: rgb(22, 20, 20);
+        box-shadow: 0px 0px 40px orange;
+        border-radius: 10%;
+        padding: 4%;
+        margin-bottom: 6%;
+    }
+
+    .projects-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .projects-container .project-card {
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+        border-radius: 10px;
+        border: 1px solid white;
+    }
+
+    .projects-container .project-card h3 {
+        color: orange;
+    }
+
+    section {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    main #about {
+        background-color: rgb(22, 20, 20);
+        padding: 4%;
+        border-radius: 10%;
+        box-shadow: 0px 0px 30px orange;
+        margin-bottom: 6%;
+    }
+
+    main #about p {
+        font-size: large;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    main #about h3,
+    h2 {
+        font-weight: 800;
+        color: orange;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    main #about .timeline {
+        text-decoration: none;
+    }
+
+    main #home .highlight {
+        color: orange;
+        font-size: larger;
+        font-weight: 600;
+    }
+
+    main #about .highlight {
+        color: orange;
+        font-size: larger;
+        font-weight: 600;
+    }
+
+    main #about .skills-icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        margin: 20px 0;
+    }
+
+    main #about .skills-icons span {
+        border: 1px solid orange;
+        font-size: 1.2rem;
+        padding: 10px;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        transition: all 0.3s ease;
+    }
+
+    main #about .skills-icons span:hover {
+        background-color: orange;
+        color: black;
+    }
+
+    main #about .timeline strong {
+        color: orange;
+        font-size: larger;
+        font-weight: 700;
+    }
+
+    /* This is Footer */
+
+    footer {
+        background-color: rgb(30, 30, 30);
+        color: whitesmoke;
+        padding: 20px 10px;
+        font-size: 14px;
+        border-top: 2px solid orange;
+        text-align: center;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 10px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footer-section {
+        margin: 10px;
+    }
+
+    .footer-section h3 {
+        color: orange;
+        margin-bottom: 8px;
+    }
+
+    .footer-section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .footer-section ul li {
+        margin: 5px 0;
+    }
+
+    .footer-section a {
+        color: whitesmoke;
+        text-decoration: none;
+    }
+
+    .footer-section a:hover {
+        color: orange;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 12px;
+        padding: 10px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .social-links {
+        text-align: center;
+        margin: 20px 0;
+        color: whitesmoke;
+    }
+    
+    .social-links h3 {
+        font-size: 20px;
+        color: orange;
+        margin-bottom: 10px;
+    }
+    
+    .social-links .icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+    
+    .social-links .icons a {
+        font-size: 24px; 
+        color: whitesmoke;
+        transition: transform 0.2s ease, color 0.2s ease;
+    }
+    
+    .social-links .icons a:hover {
+        color: orange; 
+        transform: scale(1.2);
+    }
+    
+    @media (max-width: 768px) {
+        .social-links .icons {
+            gap: 10px; 
+        }
+    }
+    
+
+
+    /* Mobile responsive styles */
+    @media (max-width: 768px) {
+        #home .container .left{
+            font-size: small;
+            width: 100%;
+        }
+        #home .container .right{
+            width: 100%;
+        }
+
+        #home .container{
+            flex-direction: column;
+        }
+
+        header nav .menu-toggle {
+            display: block;
+        }
+
+        header nav .right {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: rgb(30, 30, 30);
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            z-index: 1000;
+        }
+
+        header nav .right.active {
+            display: flex;
+        }
+
+        header nav .right a {
+            margin: 10px 0;
+        }
+
+        header nav .dropdown {
+            position: relative;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            box-shadow: none;
+        }
+    }
+
+    @media (max-width: 768px) {
+        main #about .skills-icons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        main #about .skills-icons span {
+            width: 70px;
+            margin: auto;
+        }
+
+        .projects-container {
+            flex-direction: column;
+        }
+
+        #projects h2 {
+            margin-bottom: 6%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .footer-container {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .footer-section {
+            margin: 10px 0;
+            text-align: left;
+        }
+
+        .footer-section a:hover {
+            color: orange;
+        }
+    }
