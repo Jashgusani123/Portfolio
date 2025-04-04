@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import StarsCanvas from "@/Components/Main/StarBackground";
 import Navbar from "@/Components/Main/Navbar";
+import Footer from "@/Components/Main/Footer";
 
 const inter = Inter({subsets: ["latin"]});
 
@@ -35,6 +36,7 @@ export default function RootLayout({
         <StarsCanvas />
         <Navbar />
         {children}
+        <Footer/>
       </body>
     </html>
   );
