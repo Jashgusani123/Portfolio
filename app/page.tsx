@@ -1,5 +1,3 @@
-import Encryption from "@/Components/Main/Encryption";
-import Footer from "@/Components/Main/Footer";
 import Hero from "@/Components/Main/Hero";
 import Project from "@/Components/Main/Project";
 import Skills from "@/Components/Main/Skills";
