@@ -48,12 +48,6 @@ export const Skill_data = [
       height: 80,
     },
     {
-      skill_name: "Next js 13",
-      Image: "/next.png",
-      width: 80,
-      height: 80,
-    },
-    {
       skill_name: "Framer Motion",
       Image: "/framer.png",
       width: 80,
@@ -82,17 +76,14 @@ export const Skill_data = [
   
   export const Socials = [
     {
-      name: "Discord",
-      src: "/instagram.svg",
+      name: "LinkedIn",
+      src: "/Linkedin.png",
     },
     {
-      name: "Facebook",
-      src: "/facebook.svg",
+      name: "GitHub",
+      src: "/Github.png",
     },
-    {
-      name: "Instagram",
-      src: "/discord.svg",
-    },
+   
   ];
   
   
@@ -151,13 +142,7 @@ export const Skill_data = [
       Image: "/ts.png",
       width: 80,
       height: 80,
-    },
-    {
-      skill_name: "Next js 13",
-      Image: "/next.png",
-      width: 80,
-      height: 80,
-    },
+    }
   ];
   
   export const Backend_skill = [
@@ -186,28 +171,10 @@ export const Skill_data = [
       height: 55,
     },
     {
-      skill_name: "Postger SQL",
-      Image: "/postger.png",
-      width: 70,
-      height: 70,
-    },
-    {
       skill_name: "My SQL",
       Image: "/mysql.png",
       width: 70,
       height: 70,
-    },
-    {
-      skill_name: "Prisma",
-      Image: "/prisma.webp",
-      width: 70,
-      height: 70,
-    },
-    {
-      skill_name: "Graphql",
-      Image: "/graphql.png",
-      width: 80,
-      height: 80,
     },
   ];
   

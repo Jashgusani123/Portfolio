@@ -1,12 +1,15 @@
 "use client"
 
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { slideInFromLeft, slideInFromRight, slideInFromTop } from '@/Utils/motion'
 import { SparklesIcon } from '@heroicons/react/16/solid'
 import Image from "next/image";
-const HeroContent = () => (
-    <motion.div
+import { AiOutlineHeart, AiFillHeart } from "react-icons/ai"
+
+const HeroContent = () => {
+    const [isLiked, setisLiked] = useState(false)
+    return (<motion.div
         initial={"hidden"}
         animate="visible"
         className='flex flex-row items-center justify-center md:px-20 px-10 md:mt-40 mt-52 w-full z-[20]'
@@ -40,9 +43,10 @@ const HeroContent = () => (
             </motion.p>
             <motion.a
                 variants={slideInFromLeft(1)}
-                className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+                className="py-2 button-primary flex flex-row justify-center gap-1 text-center text-white cursor-pointer rounded-lg max-w-[200px] items-center"
+                onClick={() => setisLiked(!isLiked)}
             >
-                Learn More!
+               {isLiked ? <>Liked <AiFillHeart className="text-blue-500 " /></> : <>Like <AiOutlineHeart className='text-gray-500' /></>}
             </motion.a>
         </div>
         <motion.div
@@ -55,7 +59,7 @@ const HeroContent = () => (
                 height={650}
                 width={650} />
         </motion.div>
-    </motion.div>
-)
+    </motion.div>)
+}
 
 export default HeroContent
