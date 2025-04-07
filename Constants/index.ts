@@ -78,10 +78,12 @@ export const Skill_data = [
     {
       name: "LinkedIn",
       src: "/Linkedin.png",
+      link: "https://www.linkedin.com/",
     },
     {
       name: "GitHub",
       src: "/Github.png",
+      link:"https://github.com/Jashgusani123/",
     },
    
   ];

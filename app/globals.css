@@ -83,3 +83,12 @@
 .glow-email {
   animation: glow 1.5s infinite;
 }
+
+
+canvas {
+  pointer-events: none !important;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 0 !important;
+}
