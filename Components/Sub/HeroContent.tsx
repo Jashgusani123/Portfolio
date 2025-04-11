@@ -46,19 +46,37 @@ const HeroContent = () => {
                 className="py-2 button-primary flex flex-row justify-center gap-1 text-center text-white cursor-pointer rounded-lg max-w-[200px] items-center"
                 onClick={() => setisLiked(!isLiked)}
             >
-               {isLiked ? <>Liked <AiFillHeart className="text-blue-500 " /></> : <>Like <AiOutlineHeart className='text-gray-500' /></>}
+                {isLiked ? <>Liked <AiFillHeart className="text-blue-500 " /></> : <>Like <AiOutlineHeart className='text-gray-500' /></>}
             </motion.a>
         </div>
         <motion.div
             variants={slideInFromRight(0.8)}
-            className="w-full h-full flex justify-center items-center"
+            className="w-full h-full flex justify-center items-center relative"
         >
+            {/* Personal Image Overlay */}
+            <Image
+                src="/MyImage.png"
+                alt="My Image"
+                width={400}
+                height={400}
+                className="myimage absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+rounded-full object-cover w-44 h-44 md:w-[415px] md:h-[416px] z-10 
+shadow-[0_0_40px_10px_rgba(59,130,246,0.4)]"
+            />
+
+
+
+            {/* Main Icon Image */}
             <Image
                 src="/mainIconsdark.svg"
                 alt="work icons"
+                width={650}
                 height={650}
-                width={650} />
+                className="w-full max-w-[90%] md:max-w-[650px] h-auto"
+            />
         </motion.div>
+
+
     </motion.div>)
 }
 
