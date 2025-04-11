@@ -55,13 +55,12 @@ const HeroContent = () => {
         >
             {/* Personal Image Overlay */}
             <Image
-                src="/MyImage.png"
+                src="/MyImage2.png"
                 alt="My Image"
                 width={400}
                 height={400}
-                className="myimage absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
-rounded-full object-cover w-44 h-44 md:w-[415px] md:h-[416px] z-10 
-shadow-[0_0_40px_10px_rgba(59,130,246,0.4)]"
+                className="myimage absolute top-[19rem] left-1/2 -translate-x-1/2 -translate-y-1/2 
+                object-contain rounded-full z-20 w-32 h-32 hidden lg:block md:w-[400px] md:h-96 transition-all duration-300 ease-in-out"
             />
 
 
