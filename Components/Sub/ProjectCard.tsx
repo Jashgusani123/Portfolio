@@ -16,10 +16,10 @@ const ProjectCards = ({ src, title, description, url }: Props) => {
   };
 
   return (
-    <div className='relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61]'>
+    <div className='relative overflow-hidden rounded-lg z-40 shadow-lg border border-[#2A0E61]'>
       
       {/* Image with onClick */}
-      <div onClick={handleImageClick} className='cursor-pointer'>
+      <div  className='cursor-pointer'>
         <Image
           src={src}
           alt={title}
@@ -40,6 +40,7 @@ const ProjectCards = ({ src, title, description, url }: Props) => {
           target='_blank'
           rel='noopener noreferrer'
           className='cursor-pointer p-2 items-center flex justify-center w-3xl text-white bg-gradient-to-r from-purple-500 to bg-cyan-500 rounded-3xl'
+          onClick={handleImageClick}
         >
           View
         </a>

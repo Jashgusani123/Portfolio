@@ -53,18 +53,6 @@ const HeroContent = () => {
             variants={slideInFromRight(0.8)}
             className="w-full h-full flex justify-center items-center relative"
         >
-            {/* Personal Image Overlay */}
-            <Image
-                src="/MyImage2.png"
-                alt="My Image"
-                width={400}
-                height={400}
-                className="myimage absolute top-[19rem] left-1/2 -translate-x-1/2 -translate-y-1/2 
-                object-contain rounded-full z-20 w-32 h-32 hidden lg:block md:w-[400px] md:h-96 transition-all duration-300 ease-in-out"
-            />
-
-
-
             {/* Main Icon Image */}
             <Image
                 src="/mainIconsdark.svg"
